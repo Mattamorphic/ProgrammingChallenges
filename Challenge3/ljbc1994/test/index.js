@@ -1,5 +1,5 @@
 import { assert } from 'chai'
-import morsey from '../src'
+import morseConverter from '../src'
 
 describe('morsey converter tests', () => {
 	
@@ -10,11 +10,11 @@ describe('morsey converter tests', () => {
 	
 	args.forEach((arg) => {
 		
-		it(`should return '${arg.expect}', given '${arg.value}'`, (done) => {
+		it(`should return '${arg.expect}', given '${arg.value}'`, () => {
 			
-			assert(morsey(arg.value), arg.expect)
+			let morsey = morseConverter()
 			
-			done()
+			assert.strictEqual(morsey(arg.value), arg.expect)
 			
 		})
 		
