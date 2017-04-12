@@ -14,7 +14,7 @@ Copy this project, then run `npm install` from the root of this project
 Just import the function and away you go! 
 
 ```js
-import failedSLA from 'src'
+import failedSLA from './src'
 
 const hasFailed = failedSLA({
   created: '06-03-2017 08:00:00',
