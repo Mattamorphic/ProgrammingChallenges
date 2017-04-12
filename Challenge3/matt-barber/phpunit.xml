@@ -1,0 +1,19 @@
+<phpunit
+    convertErrorsToExceptions="true"
+    convertNoticesToExceptions="true"
+    convertWarningsToExceptions="true"
+    strict="true"
+    bootstrap="vendor/autoload.php"
+    verbose = "true"
+>
+    <testsuites>
+        <testsuite name="unit">
+	        <directory suffix='.php'>./tests</directory>
+        </testsuite>
+    </testsuites>
+    <filter>
+        <whitelist addUncoveredFilesFromWhitelist="true">
+            <directory suffix=".php">./src</directory>
+        </whitelist>
+    </filter>
+</phpunit>
