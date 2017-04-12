@@ -15,7 +15,9 @@ Copy this project, then run `npm install` from the root of this project
 Just import the module and away you go!
 
 ```js
-import morsey from './src'
+import morseConverter from './src'
+
+const morsey = morseConverter() 
 
 morsey('HELLO WORLD') // gives '.... . .-.. .-.. ---  .-- --- .-. .-.. -..'
 morsey('.... . .-.. .-.. ---  .-- --- .-. .-.. -..') // gives 'HELLO WORLD'
